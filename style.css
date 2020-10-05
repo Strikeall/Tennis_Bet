@@ -1,0 +1,243 @@
+/* Main Style */
+html, body {
+  margin: 0px;
+  font-size: 16px;
+  background-image: url('https://cdn.pixabay.com/photo/2016/10/03/01/55/network-1710825_960_720.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  position: relative;
+  display: block;
+  height: 100vh;
+}
+
+h2{
+  color:white;
+}
+p {
+  color:white;
+}
+#loader-1 {
+  fill:white!important;
+}
+
+/*Header */
+.header_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+.logo img {
+  width: 70px;
+  margin-right: 10px;
+}
+.logo_img_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a.logo_img_text {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav_point {
+  text-decoration: none;
+  color: white;
+  padding: 22%;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background-color: black;
+}
+
+/* Style CSS */
+
+.search-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+.search_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 50%;
+  min-width: 340px;
+  min-height: 200px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  padding: 1%;
+}
+
+
+#loader {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input#search_date {
+    border-radius: 20px;
+    width: 450px;
+    padding: 0.5%;
+    text-align: center;
+    margin-bottom: 25px;
+    min-height: 30px;
+}
+input#search_date:focus{
+  outline: none;
+}
+.button {
+  border:1px solid gray;
+  border-radius: 20px;
+  width: 250px;
+  padding: 0.5%;
+  text-align: center;
+  background-color: white;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/* Game Compare */
+.game_compare {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 2%;
+}
+.match {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-gap:2rem;
+  border-top: 1px solid gray;
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+.games.second {
+  order: 3;
+}
+.games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+.game_result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+  text-align: center;
+}
+.weiter_zu_player {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 2%;
+  text-decoration: none;
+  color: gray;
+  background-color: unset;
+}
+.interesting_game {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+.player_img {
+  border-radius: 100px;
+  border: 1px solid gray;
+}
+#games_overview {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.55);
+  box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.55);
+}
+#games_overview p {
+  color:black;
+}
+.games-headline {
+  display: flex;
+  justify-content: space-between;
+}
+.games-headline img {
+  width: 30px;
+}
+.games-headline img:hover {
+  cursor: pointer;
+}
+.games-headline img.active {
+  transform: rotate(45deg);
+}
+
+.game_compare.active {
+  display: grid;
+}
+
+.game_results {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  background-color: white;
+  padding: 1%;
+}
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.player img{
+  margin-left: 10px;
+  width: 20px;
+}
+.player img:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+  .game_result{
+    font-size: 10px;
+  }
+  input#search_date{
+    width: 300px;
+  }
+  .match {
+    grid-gap: 0.5rem;
+  }
+  .playername {
+    text-align: center;
+  }
+}
